@@ -14,8 +14,6 @@ import os
 import django_heroku
 
 from datetime import timedelta
-import django
-django.setup()
 
 # For local testing only (heroku local)
 # from dotenv import load_dotenv
