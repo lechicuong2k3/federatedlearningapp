@@ -3,8 +3,8 @@ import json
 
 from urllib.request import urlopen, Request
 
-PW_AUTH = os.environ['rNsJ54nBwUHii5DQRnKgx63Y3xabHXJE2sabMbTpYl5YNiGvycTiUsMAZ45q3rwZ6s1c6mzdnZXyj6LC7BjX']
-PW_APPLICATION_CODE = os.environ['A2DBE-2D3EA']
+PW_AUTH = 'rNsJ54nBwUHii5DQRnKgx63Y3xabHXJE2sabMbTpYl5YNiGvycTiUsMAZ45q3rwZ6s1c6mzdnZXyj6LC7BjX'
+PW_APPLICATION_CODE = 'A2DBE-2D3EA'
 
 
 def _pw_call(method, data, verbose=False):

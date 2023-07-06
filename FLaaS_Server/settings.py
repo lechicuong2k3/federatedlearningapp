@@ -14,6 +14,8 @@ import os
 import django_heroku
 
 from datetime import timedelta
+import django
+django.setup()
 
 # For local testing only (heroku local)
 # from dotenv import load_dotenv
@@ -153,11 +155,11 @@ USE_TZ = True
 STATICFILES_STORAGE = 'django_s3_storage.storage.StaticS3Storage'
 DEFAULT_FILE_STORAGE = 'django_s3_storage.storage.S3Storage'
 
-AWS_ACCESS_KEY_ID = os.environ.get('AAKIA6PTL4NNFG72LM7NJ')
-AWS_SECRET_ACCESS_KEY = os.environ.get('rK0fktXR3EDxO9si6etX7ZKD0SynjKb+FPzNvnvI')
-AWS_S3_BUCKET_NAME = os.environ.get('model-fl')
-AWS_S3_BUCKET_NAME_STATIC = os.environ.get('static-fl')
-AWS_REGION = os.environ.get('ap-southeast-2')
+AWS_ACCESS_KEY_ID = 'AAKIA6PTL4NNFG72LM7NJ'
+AWS_SECRET_ACCESS_KEY = 'rK0fktXR3EDxO9si6etX7ZKD0SynjKb+FPzNvnvI'
+AWS_S3_BUCKET_NAME = 'model-fl'
+AWS_S3_BUCKET_NAME_STATIC = 'static-fl'
+AWS_REGION = 'ap-southeast-2'
 AWS_S3_FILE_OVERWRITE = True
 AWS_S3_ADDRESSING_STYLE = "path"
 
