@@ -153,11 +153,11 @@ USE_TZ = True
 STATICFILES_STORAGE = 'django_s3_storage.storage.StaticS3Storage'
 DEFAULT_FILE_STORAGE = 'django_s3_storage.storage.S3Storage'
 
-AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
-AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
-AWS_S3_BUCKET_NAME = os.environ.get('AWS_S3_BUCKET_NAME')
-AWS_S3_BUCKET_NAME_STATIC = os.environ.get('AWS_S3_BUCKET_NAME_STATIC')
-AWS_REGION = os.environ.get('AWS_REGION')
+AWS_ACCESS_KEY_ID = os.environ.get('AAKIA6PTL4NNFG72LM7NJ')
+AWS_SECRET_ACCESS_KEY = os.environ.get('rK0fktXR3EDxO9si6etX7ZKD0SynjKb+FPzNvnvI')
+AWS_S3_BUCKET_NAME = os.environ.get('model-fl')
+AWS_S3_BUCKET_NAME_STATIC = os.environ.get('static-fl')
+AWS_REGION = os.environ.get('ap-southeast-2')
 AWS_S3_FILE_OVERWRITE = True
 AWS_S3_ADDRESSING_STYLE = "path"
 
